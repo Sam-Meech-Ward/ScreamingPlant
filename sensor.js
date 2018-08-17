@@ -20,3 +20,5 @@ function start(callback) {
     }
   });
 }
+
+exports.start = start;
