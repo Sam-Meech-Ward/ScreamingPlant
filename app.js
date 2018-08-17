@@ -10,5 +10,5 @@ sensor.watch((err, value) => {
     return;
   }
   console.log("State", value);
-  led.writeSync(value);
+  led.writeSync(value ? 0 : 1);
 });
