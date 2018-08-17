@@ -18,6 +18,8 @@ function start(callback) {
       console.log("Ahhhhhhhh!!! I'm dry");
       callback(null, "dry");
     }
+
+    led.writeSync(value);
   });
 }
 
