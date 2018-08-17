@@ -4,6 +4,8 @@ const Gpio = onoff.Gpio;
 const led = new Gpio(17, 'out');
 const sensor = new Gpio(21, 'in', 'both');
 
+led.writeSync(1);
+
 function start(callback) {
   sensor.watch((err, value) => {
     if (err) {
