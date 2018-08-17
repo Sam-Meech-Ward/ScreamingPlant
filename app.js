@@ -13,3 +13,5 @@ sensor.start((error, state) => {
     sound.play();
   }
 });
+
+console.log("Started 🤗");
