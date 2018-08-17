@@ -9,6 +9,13 @@ sensor.watch((err, value) => {
     console.log("ERror", err);
     return;
   }
+
+  if (value === 0) {
+    console.log("All good, very moist");
+  } else if (value === 1) {
+    console.log("Ahhhhhhhh!!! I'm dry");
+  }
+  
   console.log("State", value);
   led.writeSync(value ? 0 : 1);
 });
